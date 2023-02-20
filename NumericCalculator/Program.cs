@@ -5,12 +5,12 @@ int number1;
 int number2;
 int result;
 
-Console.WriteLine("Select the operation you want to do:\nSuma\nResta\nMultiplicacion\nDivision");
+Console.WriteLine("Select the operation you want to do:\nAddition\nSubtract\nMultiplication\nDivision");
 string select = Console.ReadLine();
 
 switch (select)
 {
-    case "Suma":
+    case "Addition":
         Console.WriteLine("Input the first number");
         number1 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Input the second number");
@@ -19,7 +19,7 @@ switch (select)
         result = number1 + number2;
         Console.WriteLine("The result is: " + result);
         break;
-    case "Resta":
+    case "Subtract":
         Console.WriteLine("Input the first number");
         number1 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Input the second number");
@@ -28,7 +28,7 @@ switch (select)
         result = number1 - number2;
         Console.WriteLine("The result is: " + result);
         break;
-    case "Multiplicacion":
+    case "Multiplication":
         Console.WriteLine("Input the first number");
         number1 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Input the second number");
